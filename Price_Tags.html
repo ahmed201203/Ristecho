@@ -1,0 +1,1585 @@
+<!DOCTYPE html><html lang="en-US"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Price Tags | API Docs</title>
+    <meta name="description" content="Ristecho API Docs">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#3a0839">
+  <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#3a0839">
+  <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'report-sample' 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'unsafe-inline' 'report-sample' 'self' https://fonts.googleapis.com; object-src 'none'; base-uri 'self'; connect-src 'self' https://bh4d9od16a-dsn.algolia.net; font-src 'self' https://fonts.gstatic.com; frame-src 'self'; img-src 'self'; manifest-src 'self'; media-src 'self'; worker-src 'none';">
+          
+          <link rel="preload" href="/assets/css/0.styles.91781e65.css" as="style"><link rel="preload" href="/assets/js/app.8b48e3b5.js" as="script"><link rel="preload" href="/assets/js/3.c58bb6c9.js" as="script"><link rel="preload" href="/assets/js/54.f13fc188.js" as="script"><link rel="prefetch" href="/assets/js/10.7d9d8f10.js"><link rel="prefetch" href="/assets/js/100.c9f56107.js"><link rel="prefetch" href="/assets/js/101.6346e2ec.js"><link rel="prefetch" href="/assets/js/102.b64f16d2.js"><link rel="prefetch" href="/assets/js/103.b65d79c5.js"><link rel="prefetch" href="/assets/js/104.c0964733.js"><link rel="prefetch" href="/assets/js/105.96629240.js"><link rel="prefetch" href="/assets/js/106.34900971.js"><link rel="prefetch" href="/assets/js/107.687e569a.js"><link rel="prefetch" href="/assets/js/108.2e53aed8.js"><link rel="prefetch" href="/assets/js/109.4c9750ea.js"><link rel="prefetch" href="/assets/js/11.fe9154a3.js"><link rel="prefetch" href="/assets/js/110.a3c0efe6.js"><link rel="prefetch" href="/assets/js/111.23933c17.js"><link rel="prefetch" href="/assets/js/112.b4699be0.js"><link rel="prefetch" href="/assets/js/113.e24b0a87.js"><link rel="prefetch" href="/assets/js/114.ff0fcd56.js"><link rel="prefetch" href="/assets/js/115.3073e143.js"><link rel="prefetch" href="/assets/js/116.2bbe6975.js"><link rel="prefetch" href="/assets/js/117.2636260b.js"><link rel="prefetch" href="/assets/js/118.2cf97230.js"><link rel="prefetch" href="/assets/js/119.6781a719.js"><link rel="prefetch" href="/assets/js/12.afe2ec28.js"><link rel="prefetch" href="/assets/js/120.54994ea9.js"><link rel="prefetch" href="/assets/js/121.15aee12c.js"><link rel="prefetch" href="/assets/js/122.1d391103.js"><link rel="prefetch" href="/assets/js/123.53ddea08.js"><link rel="prefetch" href="/assets/js/124.b5b774fb.js"><link rel="prefetch" href="/assets/js/125.76bea308.js"><link rel="prefetch" href="/assets/js/126.4c623f19.js"><link rel="prefetch" href="/assets/js/13.f10632ae.js"><link rel="prefetch" href="/assets/js/14.babf485e.js"><link rel="prefetch" href="/assets/js/15.ff0797f2.js"><link rel="prefetch" href="/assets/js/16.83f5aa30.js"><link rel="prefetch" href="/assets/js/17.e47fd6d3.js"><link rel="prefetch" href="/assets/js/18.b3312737.js"><link rel="prefetch" href="/assets/js/19.18358769.js"><link rel="prefetch" href="/assets/js/20.4b75b38c.js"><link rel="prefetch" href="/assets/js/21.bc11c6d6.js"><link rel="prefetch" href="/assets/js/22.7958a569.js"><link rel="prefetch" href="/assets/js/23.5bedd466.js"><link rel="prefetch" href="/assets/js/24.21e515cd.js"><link rel="prefetch" href="/assets/js/25.81aa4b4c.js"><link rel="prefetch" href="/assets/js/26.c29b6b2c.js"><link rel="prefetch" href="/assets/js/27.10e704a3.js"><link rel="prefetch" href="/assets/js/28.0d44c7db.js"><link rel="prefetch" href="/assets/js/29.dcc43afa.js"><link rel="prefetch" href="/assets/js/30.b4090555.js"><link rel="prefetch" href="/assets/js/31.676b8b69.js"><link rel="prefetch" href="/assets/js/32.8dca0b3d.js"><link rel="prefetch" href="/assets/js/33.2eb05499.js"><link rel="prefetch" href="/assets/js/34.dcc3dfbd.js"><link rel="prefetch" href="/assets/js/35.ce7dcad2.js"><link rel="prefetch" href="/assets/js/36.38f7e3ff.js"><link rel="prefetch" href="/assets/js/37.f12a5002.js"><link rel="prefetch" href="/assets/js/38.88271a3c.js"><link rel="prefetch" href="/assets/js/39.87fee58f.js"><link rel="prefetch" href="/assets/js/4.4f1b330b.js"><link rel="prefetch" href="/assets/js/40.b3b780ab.js"><link rel="prefetch" href="/assets/js/41.692aa518.js"><link rel="prefetch" href="/assets/js/42.cabae624.js"><link rel="prefetch" href="/assets/js/43.2964b0a9.js"><link rel="prefetch" href="/assets/js/44.e74514e9.js"><link rel="prefetch" href="/assets/js/45.c276730c.js"><link rel="prefetch" href="/assets/js/46.ed116225.js"><link rel="prefetch" href="/assets/js/47.5e600103.js"><link rel="prefetch" href="/assets/js/48.a00f96c1.js"><link rel="prefetch" href="/assets/js/49.e0cac9df.js"><link rel="prefetch" href="/assets/js/5.a1741e6a.js"><link rel="prefetch" href="/assets/js/50.8c4cf91b.js"><link rel="prefetch" href="/assets/js/51.39310051.js"><link rel="prefetch" href="/assets/js/52.61dc1ecc.js"><link rel="prefetch" href="/assets/js/53.e3736635.js"><link rel="prefetch" href="/assets/js/55.7cd68558.js"><link rel="prefetch" href="/assets/js/56.123b83ef.js"><link rel="prefetch" href="/assets/js/57.fb18d343.js"><link rel="prefetch" href="/assets/js/58.f7b2b72a.js"><link rel="prefetch" href="/assets/js/59.df01ebc8.js"><link rel="prefetch" href="/assets/js/6.2c653598.js"><link rel="prefetch" href="/assets/js/60.774879fc.js"><link rel="prefetch" href="/assets/js/61.d2545f82.js"><link rel="prefetch" href="/assets/js/62.e3cc4ffb.js"><link rel="prefetch" href="/assets/js/63.2665caba.js"><link rel="prefetch" href="/assets/js/64.71a0f5ab.js"><link rel="prefetch" href="/assets/js/65.82a6bf43.js"><link rel="prefetch" href="/assets/js/66.183e119f.js"><link rel="prefetch" href="/assets/js/67.08151eba.js"><link rel="prefetch" href="/assets/js/68.ac95c6b6.js"><link rel="prefetch" href="/assets/js/69.30654a04.js"><link rel="prefetch" href="/assets/js/7.21f65fd6.js"><link rel="prefetch" href="/assets/js/70.7573aa3f.js"><link rel="prefetch" href="/assets/js/71.01d0e79c.js"><link rel="prefetch" href="/assets/js/72.6293a5f5.js"><link rel="prefetch" href="/assets/js/73.f61746d1.js"><link rel="prefetch" href="/assets/js/74.f185577c.js"><link rel="prefetch" href="/assets/js/75.a4748ea2.js"><link rel="prefetch" href="/assets/js/76.76651b5e.js"><link rel="prefetch" href="/assets/js/77.1d4dd30f.js"><link rel="prefetch" href="/assets/js/78.2bd5db32.js"><link rel="prefetch" href="/assets/js/79.b185e3fe.js"><link rel="prefetch" href="/assets/js/8.284975a8.js"><link rel="prefetch" href="/assets/js/80.fbf6966a.js"><link rel="prefetch" href="/assets/js/81.43ab1975.js"><link rel="prefetch" href="/assets/js/82.885c54fc.js"><link rel="prefetch" href="/assets/js/83.803d4ea7.js"><link rel="prefetch" href="/assets/js/84.44cf7725.js"><link rel="prefetch" href="/assets/js/85.dd3dd49a.js"><link rel="prefetch" href="/assets/js/86.d2785a0f.js"><link rel="prefetch" href="/assets/js/87.925f1ebd.js"><link rel="prefetch" href="/assets/js/88.e866f8ae.js"><link rel="prefetch" href="/assets/js/89.6f6811c1.js"><link rel="prefetch" href="/assets/js/9.c8efa36d.js"><link rel="prefetch" href="/assets/js/90.92f4eb2c.js"><link rel="prefetch" href="/assets/js/91.4e75d8b0.js"><link rel="prefetch" href="/assets/js/92.4dacca5b.js"><link rel="prefetch" href="/assets/js/93.dff6a0d4.js"><link rel="prefetch" href="/assets/js/94.aa631f78.js"><link rel="prefetch" href="/assets/js/95.95b0e6e9.js"><link rel="prefetch" href="/assets/js/96.c9ee6d0f.js"><link rel="prefetch" href="/assets/js/97.651197fb.js"><link rel="prefetch" href="/assets/js/98.08119d6c.js"><link rel="prefetch" href="/assets/js/99.1de38228.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.6a1b1094.js">
+          <link rel="stylesheet" href="css/0.styles.91781e65.css">
+        </head>
+        <body>
+          <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="images/logo.png" alt="API Docs" class="logo"> <span class="site-name can-hide">API Docs</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  
+            <ul class="sidebar-links">
+              <li><section class="sidebar-group depth-0">
+                <p class="sidebar-heading"><span>Overview</span> <!---->
+                </p> <ul class="sidebar-links sidebar-group-items">
+                  <li><a class="sidebar-link" href="introduction.html">Introduction</a></li>
+                  <li><a class="sidebar-link" href="postman_collection.html">Postman Collection</a></li>
+                  <li><a class="sidebar-link" href="authentication.html">Authentication</a></li>
+                  <li><a class="sidebar-link" href="scopes.html">Scopes</a></li>
+                  <li><a class="sidebar-link" href="errors.html">Errors</a></li>
+                  <li><a class="sidebar-link" href="pagination.html">Pagination</a></li>
+                  <li><a class="sidebar-link" href="includables.html">Includables</a></li>
+                  <li><a class="sidebar-link" href="filtering.html">Filtering</a></li>
+                  <li><a class="sidebar-link" href="Sorting.html">Sorting</a></li><li>
+                    <a class="sidebar-link" href="Webhooks.html">Webhooks</a></li>
+                </ul></section></li><li><section class="sidebar-group depth-0">
+                  <p class="sidebar-heading open"><span>Core Resources</span> <!---->
+                  </p> <ul class="sidebar-links sidebar-group-items">
+                    <li><a class="sidebar-link" href="Addresses.html">Addresses</a></li>
+                    <li><a class="sidebar-link" href="branch_business_days.html">Branch Business Days</a></li>
+                    <li><a class="sidebar-link" href="Branches.html">Branches</a></li>
+                    <li><a class="sidebar-link" href="Categories.html">Categories</a></li>
+                    <li><a class="sidebar-link" href="Charges.html">Charges</a></li>
+                    <li><a class="sidebar-link" href="Combos.html">Combos</a></li>
+                    <li><a class="sidebar-link" href="Coupons.html">Coupons</a></li>
+                    <li><a class="sidebar-link" href="Customers.html">Customers</a></li>
+                    <li><a class="sidebar-link" href="Delivery Zones.html">Delivery Zones</a></li>
+                    <li><a class="sidebar-link" href="Devices.html">Devices</a></li>
+                    <li><a class="sidebar-link" href="Discounts.html">Discounts</a></li>
+                    <li><a class="sidebar-link" href="Drawer_Operations.html">Drawer Operations</a></li>
+                    <li><a class="sidebar-link" href="Gift_Card_Product.html">Gift Card Product</a></li>
+                    <li><a class="sidebar-link" href="Gift_Card_Transactions.html">Gift Card Transactions</a></li>
+                    <li><a class="sidebar-link" href="Gift_Cards.html">Gift Cards</a></li>
+                    <li><a class="sidebar-link" href="Groups.html">Groups</a></li>
+                    <li><a class="sidebar-link" href="House_Account_Transactions.html">House Account Transactions</a></li>
+                    <li><a class="sidebar-link" href="Loyalty.html">Loyalty</a></li>
+                    <li><a class="sidebar-link" href="Menu_Display.html">Menu Display</a></li>
+                    <li><a class="sidebar-link" href="Modifier_Options.html">Modifier Options</a></li>
+                    <li><a class="sidebar-link" href="Modifiers.html">Modifiers</a></li>
+                    <li><a class="sidebar-link" href="Orders.html">Orders</a></li>
+                    <li><a class="sidebar-link" href="Payment Methods.html">Payment Methods</a></li>
+                    <li><a class="active sidebar-link" href="Price_Tags.html">Price Tags</a>
+           <ul class="sidebar-sub-headers"><li class="sidebar-sub-header">
+           <a class="sidebar-link" href="#the-price-tag-object">The Price Tag Object</a></li>
+            <li class="sidebar-sub-header">
+          <a class="sidebar-link" href="#list-price-tags">List Price Tags</a></li>
+         <li class="sidebar-sub-header">
+        <a class="sidebar-link" href="#get-price-tag">Get Price Tag</a></li>
+        <li class="sidebar-sub-header">
+         <a class="sidebar-link" href="#create-price-tag">Create Price Tag</a></li>
+       <li class="sidebar-sub-header">
+      <a class="sidebar-link" href="#update-price-tag">Update Price Tag</a></li>
+        <li class="sidebar-sub-header">
+         <a class="sidebar-link" href="#delete-price-tag">Delete Price Tag</a></li>
+        <li class="sidebar-sub-header">
+       <a class="sidebar-link" href="#restore-price-tag">Restore Price Tag</a></li>
+         <li class="sidebar-sub-header">
+           <a class="sidebar-link" href="#get-price-tag-products">Get Price Tag Products</a></li>
+             <li class="sidebar-sub-header">
+              <a class="sidebar-link" href="#add-price-tag-products">Add Price Tag Products</a></li>
+               <li class="sidebar-sub-header">
+               <a class="sidebar-link" href="#delete-price-tag-from-products">Delete Price Tag from Products</a></li>
+             <li class="sidebar-sub-header">
+             <a class="sidebar-link" href="#get-price-tag-combo-options">Get Price Tag Combo options</a></li>
+             <li class="sidebar-sub-header">
+                <a class="sidebar-link" href="#add-price-tag-combo-options">Add Price Tag Combo options</a></li>
+               <li class="sidebar-sub-header">
+            <a class="sidebar-link" href="#delete-price-tag-from-combo-options">Delete Price Tag from Combo Options</a></li>
+              <li class="sidebar-sub-header">
+            <a class="sidebar-link" href="#get-price-tag-modifier-options">Get Price Tag Modifier Options</a></li>
+          <li class="sidebar-sub-header">
+        <a class="sidebar-link" href="#add-price-tag-modifier-options">Add Price Tag Modifier Options</a></li>
+         <li class="sidebar-sub-header">
+           <a class="sidebar-link" href="#delete-price-tag-from-modifier-options">Delete Price Tag from Modifier Options</a></li></ul></li>
+           <li>
+          <a class="sidebar-link" href="Products.html">Products</a></li>
+              <li><a class="sidebar-link" href="Promotions.html">Promotions</a></li>
+             <li><a class="sidebar-link" href="Roles.html">Roles</a></li>
+            <li><a class="sidebar-link" href="reasons.html">Reasons</a></li>
+    <li><a class="sidebar-link" href="Sections.html">Sections</a></li>
+    <li><a class="sidebar-link" href="settings.html">Settings</a></li>
+    <li><a class="sidebar-link" href="Shifts.html">Shifts</a></li>
+    <li><a class="sidebar-link" href="Tables.html">Tables</a></li>
+    <li><a class="sidebar-link" href="Tags.html">Tags</a></li>
+    <li><a class="sidebar-link" href="Tax_Groups">Tax Groups</a></li>
+    <li><a class="sidebar-link" href="Taxes.html">Taxes</a></li>
+    <li><a class="sidebar-link" href="Tills.html">Tills</a></li>
+    <li><a class="sidebar-link" href="Timed_Events.html">Timed Events</a></li>
+    <li><a class="sidebar-link" href="Users.html">Users</a></li>
+    <li><a class="sidebar-link" href="Whoami.html">Whoami</a></li>
+  </ul></section></li><li><section class="sidebar-group depth-0">
+    <p class="sidebar-heading"><span>Inventory Resources</span> <!----></p>
+     <ul class="sidebar-links sidebar-group-items">
+      <li><a class="sidebar-link" href="Cost_Adjustment_Transactions.html">Cost Adjustment Transactions</a></li>
+      <li><a class="sidebar-link" href="Inventory_Categories.html">Inventory Categories</a></li>
+      <li><a class="sidebar-link" href="Inventory_Counts.html">Inventory Counts</a></li>
+      <li><a class="sidebar-link" href="Inventory_Day.html">Inventory Day</a></li>
+      <li><a class="sidebar-link" href="Inventory_Items.html">Inventory Items</a></li>
+      <li><a class="sidebar-link" href="Inventory_Levels.html">Inventory Levels</a></li>
+      <li><a class="sidebar-link" href="Inventory_Snapshots.html">Inventory Snapshots</a></li>
+      <li><a class="sidebar-link" href="Inventory_Transactions.html">Inventory Transactions</a></li>
+      <li><a class="sidebar-link" href="Purchase_Order.html">Purchase Order</a></li>
+      <li><a class="sidebar-link" href="Suppliers.html">Suppliers</a></li>
+      <li><a class="sidebar-link" href="Transfer_Orders.html">Transfer Orders</a></li>
+      <li><a class="sidebar-link" href="Warehouses.html">Warehouses</a></li>
+</ul></section></li></ul> </aside> <main class="page">
+ <div class="theme-default-content content__default"><h1 id="price-tags">
+  <a href="#price-tags" class="header-anchor">#</a> Price Tags</h1> <h2 id="the-price-tag-object"><a href="#the-price-tag-object" class="header-anchor">#</a> The Price Tag Object</h2> <p>The price tag allows the business to have one product with multiple prices to avoid duplicating products for different order sources and order types.</p> <p>Users can create multiple price tags and apply them to products, combos, or modifier options.</p> <h4 id="sample"><a href="#sample" class="header-anchor">#</a> Sample</h4> <div class="language- extra-class"><pre class="language-text"><code>{
+        "data": [
+          {
+      "order_tag": {
+        "id": "965ddf6f-be02-4c39-b1aa-8e4e10d92d99",
+        "type": 4,
+        "name": "tag",
+        "name_localized": "tag",
+        "created_at": "2022-05-23 09:47:27",
+        "updated_at": "2022-05-23 09:47:27",
+        "deleted_at": null
+      },
+      "timed_events": [],
+      "branches": [
+        {
+          "id": "9598b48d-ffad-42da-bc43-46fe52b7d83a",
+          "name": "Branch 1",
+          "name_localized": "branch1",
+          "reference": "B01",
+          "type": 1,
+          "latitude": "30.033333",
+          "longitude": "31.233334",
+          "phone": null,
+          "opening_from": "01:00",
+          "opening_to": "22:00",
+          "inventory_end_of_day_time": "06:00",
+          "receipt_header": "Welcome",
+          "receipt_footer": "Thank you",
+          "settings": {
+            "branch_tax_number": "12345",
+            "branch_tax_registration_name": "tax-reg-name"
+          },
+          "created_at": "2022-02-14 09:29:27",
+          "updated_at": "2022-05-18 22:00:11",
+          "deleted_at": null,
+          "receives_online_orders": true,
+          "accepts_reservations": true,
+          "reservation_duration": 30,
+          "reservation_times": null,
+          "address": null
+        },
+        {
+          "id": "9598b48e-1646-446b-92b6-08dd59bc245e",
+          "name": "Branch 2",
+          "name_localized": null,
+          "reference": "B02",
+          "type": 1,
+          "latitude": null,
+          "longitude": null,
+          "phone": null,
+          "opening_from": "00:00",
+          "opening_to": "00:00",
+          "inventory_end_of_day_time": "00:00",
+          "receipt_header": null,
+          "receipt_footer": null,
+          "settings": null,
+          "created_at": "2022-02-14 09:29:27",
+          "updated_at": "2022-03-01 08:24:06",
+          "deleted_at": null,
+          "receives_online_orders": true,
+          "accepts_reservations": true,
+          "reservation_duration": 30,
+          "reservation_times": null,
+          "address": null
+        }
+      ],
+      "id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+      "name": "Online ordering pricing",
+      "name_localized": null,
+      "created_at": "2022-05-22 09:34:42",
+      "updated_at": "2022-06-29 11:03:29",
+      "deleted_at": null,
+      "products": [
+        {
+          "id": "95ad35ce-b8e7-4c2e-810a-76fb61a1634e",
+          "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+          "category_id": "95ad35ad-2577-443b-a29a-04394d67909e",
+          "sku": "sk-0006",
+          "barcode": null,
+          "name": "BBQ Burger",
+          "name_localized": null,
+          "description": null,
+          "description_localized": null,
+          "image": null,
+          "is_active": true,
+          "is_stock_product": true,
+          "is_ready": true,
+          "pricing_method": 1,
+          "selling_method": 1,
+          "costing_method": 2,
+          "preparation_time": null,
+          "price": 50,
+          "cost": null,
+          "calories": null,
+          "created_at": "2022-02-24 14:07:26",
+          "updated_at": "2022-03-20 21:52:28",
+          "deleted_at": null,
+          "pivot": {
+            "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+            "product_id": "95ad35ce-b8e7-4c2e-810a-76fb61a1634e",
+            "price": 40
+          }
+        },
+        {
+          "id": "95afc8fe-875f-402b-a051-9bbdae39bd73",
+          "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+          "category_id": "95ad35ad-2577-443b-a29a-04394d67909e",
+          "sku": "sk-0010",
+          "barcode": null,
+          "name": "Chicken Burger",
+          "name_localized": null,
+          "description": null,
+          "description_localized": null,
+          "image": null,
+          "is_active": true,
+          "is_stock_product": true,
+          "is_ready": true,
+          "pricing_method": 1,
+          "selling_method": 1,
+          "costing_method": 2,
+          "preparation_time": null,
+          "price": 38,
+          "cost": null,
+          "calories": null,
+          "created_at": "2022-02-25 20:50:39",
+          "updated_at": "2022-06-07 14:40:56",
+          "deleted_at": null,
+          "pivot": {
+            "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+            "product_id": "95afc8fe-875f-402b-a051-9bbdae39bd73",
+            "price": 30
+          }
+        },
+        {
+          "id": "95afcd8d-6ba8-4e0f-b878-d58e44bc8b2b",
+          "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+          "category_id": "9598e026-dde3-4aef-9f88-9e5e53836da2",
+          "sku": "sk-0013",
+          "barcode": null,
+          "name": "Cola",
+          "name_localized": null,
+          "description": null,
+          "description_localized": null,
+          "image": null,
+          "is_active": true,
+          "is_stock_product": true,
+          "is_ready": true,
+          "pricing_method": 1,
+          "selling_method": 1,
+          "costing_method": 2,
+          "preparation_time": null,
+          "price": 5,
+          "cost": null,
+          "calories": null,
+          "created_at": "2022-02-25 21:03:24",
+          "updated_at": "2022-02-25 21:03:24",
+          "deleted_at": null,
+          "pivot": {
+            "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+            "product_id": "95afcd8d-6ba8-4e0f-b878-d58e44bc8b2b",
+            "price": 4
+          }
+        }
+      ],
+      "modifier_options": [
+        {
+          "id": "95a52ec7-82b8-4300-b794-3059b79db30a",
+          "modifier_id": "959bcf39-13cc-4c36-85d6-e9277cdc18d6",
+          "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+          "name": "BBQ Sauce",
+          "name_localized": null,
+          "sku": "sk-0003",
+          "is_active": true,
+          "costing_method": 2,
+          "price": 2,
+          "cost": null,
+          "calories": null,
+          "created_at": "2022-02-20 14:21:09",
+          "updated_at": "2022-05-12 07:58:33",
+          "deleted_at": null,
+          "index": 0,
+          "pivot": {
+            "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+            "modifier_option_id": "95a52ec7-82b8-4300-b794-3059b79db30a",
+            "price": 0
+          }
+        },
+        {
+          "id": "95afc868-e245-48ee-87e6-5791a26489df",
+          "modifier_id": "959bcf39-13cc-4c36-85d6-e9277cdc18d6",
+          "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+          "name": "Ranch Sauce",
+          "name_localized": null,
+          "sku": "sk-0009",
+          "is_active": true,
+          "costing_method": 2,
+          "price": 3,
+          "cost": null,
+          "calories": null,
+          "created_at": "2022-02-25 20:49:01",
+          "updated_at": "2022-03-13 22:22:04",
+          "deleted_at": null,
+          "index": 0,
+          "pivot": {
+            "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+            "modifier_option_id": "95afc868-e245-48ee-87e6-5791a26489df",
+            "price": 0
+          }
+        }
+      ],
+      "combo_options": [
+        {
+          "id": "95afd4f4-be7c-4262-82f3-822eff400492",
+          "combo_item_id": "95afd492-fbc3-436f-b0a2-08b55bcdd518",
+          "name": "BBQ Burger",
+          "name_localized": null,
+          "created_at": "2022-02-25 21:24:06",
+          "updated_at": "2022-02-25 21:24:06",
+          "deleted_at": null,
+          "pivot": {
+            "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+            "combo_option_id": "95afd4f4-be7c-4262-82f3-822eff400492",
+            "price": 20,
+            "combo_size_id": "95afd47d-2c97-4b79-9f32-2af25b2b9908",
+            "product_id": "95ad35ce-b8e7-4c2e-810a-76fb61a1634e"
+          }
+        },
+        {
+          "id": "95afd56e-d65c-4c78-a880-ce6924217f16",
+          "combo_item_id": "95afd530-5fd2-4b63-9218-c888e7c6c502",
+          "name": "Cola",
+          "name_localized": null,
+          "created_at": "2022-02-25 21:25:26",
+          "updated_at": "2022-02-25 21:25:26",
+          "deleted_at": null,
+          "pivot": {
+            "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+            "combo_option_id": "95afd56e-d65c-4c78-a880-ce6924217f16",
+            "price": 3,
+            "combo_size_id": "95afd487-a867-43bf-b538-3b232f4090b7",
+            "product_id": "95afcd8d-6ba8-4e0f-b878-d58e44bc8b2b"
+          }
+        }
+      ]
+    }
+  ]
+}
+</code></pre></div><h4 id="attributes"><a href="#attributes" class="header-anchor">#</a> Attributes</h4> <table><thead><tr><th>Field</th> <th>Type</th> <th>Rule</th> <th>Description</th></tr></thead> <tbody><tr><td><code>id</code></td> <td><code>string</code></td> <td></td> <td>Unique identifier for the Price Tag.</td></tr> <tr><td><code>name</code>*</td> <td><code>string</code></td> <td><code>updatable</code></td> <td>Name of the Price Tag.</td></tr> <tr><td><code>name_localized</code></td> <td><code>string</code></td> <td><code>nullable</code> <code>updatable</code></td> <td>Localized name of the Price Tag.</td></tr> <tr><td><code>timed_events</code></td> <td><code>array</code></td> <td><code>updatable</code> <code>includable</code></td> <td>List of <a href="https://apidocs.Ristecho.com/core/resources/timed_events" rel="noopener noreferrer" target="_blank">Timed Event<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> objects attached to the Price Tag.</td></tr> <tr><td><code>products</code></td> <td><code>array</code></td> <td><code>updatable</code> <code>includable</code></td> <td>List of <a href="https://apidocs.Ristecho.com/core/resources/products" rel="noopener noreferrer" target="_blank">Products<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> objects attached to the Price Tag.</td></tr> <tr><td><code>combo_options</code></td> <td><code>array</code></td> <td><code>updatable</code> <code>includable</code></td> <td>List of <a href="https://apidocs.Ristecho.com/core/resources/combos" rel="noopener noreferrer" target="_blank">Combo<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> options objects attached to the Price Tag.</td></tr> <tr><td><code>order_tag</code></td> <td><code>array</code></td> <td><code>updatable</code> <code>includable</code></td> <td>The <a href="https://apidocs.Ristecho.com/core/resources/tags" rel="noopener noreferrer" target="_blank">Order Tag<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> objects attached to the Price Tag.</td></tr> <tr><td><code>modifier_options</code></td> <td><code>array</code></td> <td><code>updatable</code> <code>includable</code></td> <td>List of <a href="https://apidocs.Ristecho.com/core/resources/modifier_options" rel="noopener noreferrer" target="_blank">Modifier Options<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> ids attached to the Price Tag</td></tr> <tr><td><code>branches</code></td> <td><code>array</code></td> <td><code>updatable</code> <code>includable</code></td> <td>List of <a href="https://apidocs.Ristecho.com/core/resources/branches" rel="noopener noreferrer" target="_blank">Branch<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> objects attached to the Price Tag.</td></tr> <tr><td><code>created_at</code></td> <td><code>string</code></td> <td><code>sortable</code></td> <td>Time <code>YYYY-MM-DD HH-MM-SS</code> in UTC at which the Price tag was created.</td></tr> <tr><td><code>updated_at</code></td> <td><code>string</code></td> <td><code>sortable</code></td> <td>Time <code>YYYY-MM-DD HH-MM-SS</code> in UTC at which the Price tag was updated.</td></tr> <tr><td><code>deleted_at</code></td> <td><code>string</code></td> <td><code>nullable</code></td> <td>Time <code>YYYY-MM-DD HH-MM-SS</code> in UTC at which the Price tag was deleted.</td></tr></tbody></table> <h2 id="list-price-tags"><a href="#list-price-tags" class="header-anchor">#</a> List Price Tags</h2> <p><code>GET /price_tags</code></p> <h4 id="scopes"><a href="#scopes" class="header-anchor">#</a> Scopes</h4> <p><code>general.read</code></p> <h4 id="filters"><a href="#filters" class="header-anchor">#</a> Filters</h4> <ul><li><code>id</code></li> <li><code>name</code></li> <li><code>name_localized</code></li> <li><code>timed_events.id</code></li> <li><code>order_tag.id</code></li> <li><code>branches.id</code></li> <li><code>updated_after</code></li> <li><code>is_deleted</code></li> <li><code>created_on</code></li> <li><code>updated_on</code></li> <li><code>deleted_on</code></li></ul> <h4 id="response"><a href="#response" class="header-anchor">#</a> Response</h4> <div class="language- extra-class"><pre class="language-text"><code>{
+  "data": [
+    {
+      "order_tag": {
+        "id": "965ddf6f-be02-4c39-b1aa-8e4e10d92d99",
+        "type": 4,
+        "name": "tag",
+        "name_localized": "tag",
+        "created_at": "2022-05-23 09:47:27",
+        "updated_at": "2022-05-23 09:47:27",
+        "deleted_at": null
+      },
+      "timed_events": [],
+      "branches": [
+        {
+          "id": "9598b48d-ffad-42da-bc43-46fe52b7d83a",
+          "name": "Branch 1",
+          "name_localized": "branch1",
+          "reference": "B01",
+          "type": 1,
+          "latitude": "30.033333",
+          "longitude": "31.233334",
+          "phone": null,
+          "opening_from": "01:00",
+          "opening_to": "22:00",
+          "inventory_end_of_day_time": "06:00",
+          "receipt_header": "Welcome",
+          "receipt_footer": "Thank you",
+          "settings": {
+            "branch_tax_number": "12345",
+            "branch_tax_registration_name": "tax-reg-name"
+          },
+          "created_at": "2022-02-14 09:29:27",
+          "updated_at": "2022-05-18 22:00:11",
+          "deleted_at": null,
+          "receives_online_orders": true,
+          "accepts_reservations": true,
+          "reservation_duration": 30,
+          "reservation_times": null,
+          "address": null
+        },
+        {
+          "id": "9598b48e-1646-446b-92b6-08dd59bc245e",
+          "name": "Branch 2",
+          "name_localized": null,
+          "reference": "B02",
+          "type": 1,
+          "latitude": null,
+          "longitude": null,
+          "phone": null,
+          "opening_from": "00:00",
+          "opening_to": "00:00",
+          "inventory_end_of_day_time": "00:00",
+          "receipt_header": null,
+          "receipt_footer": null,
+          "settings": null,
+          "created_at": "2022-02-14 09:29:27",
+          "updated_at": "2022-03-01 08:24:06",
+          "deleted_at": null,
+          "receives_online_orders": true,
+          "accepts_reservations": true,
+          "reservation_duration": 30,
+          "reservation_times": null,
+          "address": null
+        }
+      ],
+      "id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+      "name": "Online ordering pricing",
+      "name_localized": null,
+      "created_at": "2022-05-22 09:34:42",
+      "updated_at": "2022-06-30 07:06:15",
+      "deleted_at": null,
+      "products": [
+        {
+          "id": "95afc8fe-875f-402b-a051-9bbdae39bd73",
+          "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+          "category_id": "95ad35ad-2577-443b-a29a-04394d67909e",
+          "sku": "sk-0010",
+          "barcode": null,
+          "name": "Chicken Burger",
+          "name_localized": null,
+          "description": null,
+          "description_localized": null,
+          "image": null,
+          "is_active": true,
+          "is_stock_product": true,
+          "is_ready": true,
+          "pricing_method": 1,
+          "selling_method": 1,
+          "costing_method": 2,
+          "preparation_time": null,
+          "price": 38,
+          "cost": null,
+          "calories": null,
+          "created_at": "2022-02-25 20:50:39",
+          "updated_at": "2022-06-07 14:40:56",
+          "deleted_at": null,
+          "pivot": {
+            "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+            "product_id": "95afc8fe-875f-402b-a051-9bbdae39bd73",
+            "price": 30
+          }
+        }
+      ],
+      "modifier_options": [
+        {
+          "id": "95a52ec7-82b8-4300-b794-3059b79db30a",
+          "modifier_id": "959bcf39-13cc-4c36-85d6-e9277cdc18d6",
+          "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+          "name": "BBQ Sauce",
+          "name_localized": null,
+          "sku": "sk-0003",
+          "is_active": true,
+          "costing_method": 2,
+          "price": 2,
+          "cost": null,
+          "calories": null,
+          "created_at": "2022-02-20 14:21:09",
+          "updated_at": "2022-05-12 07:58:33",
+          "deleted_at": null,
+          "index": 0,
+          "pivot": {
+            "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+            "modifier_option_id": "95a52ec7-82b8-4300-b794-3059b79db30a",
+            "price": 0
+          }
+        }
+      ],
+      "combo_options": [
+        {
+          "id": "95afd4f4-be7c-4262-82f3-822eff400492",
+          "combo_item_id": "95afd492-fbc3-436f-b0a2-08b55bcdd518",
+          "name": "BBQ Burger",
+          "name_localized": null,
+          "created_at": "2022-02-25 21:24:06",
+          "updated_at": "2022-02-25 21:24:06",
+          "deleted_at": null,
+          "pivot": {
+            "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+            "combo_option_id": "95afd4f4-be7c-4262-82f3-822eff400492",
+            "price": 20,
+            "combo_size_id": "95afd47d-2c97-4b79-9f32-2af25b2b9908",
+            "product_id": "95ad35ce-b8e7-4c2e-810a-76fb61a1634e"
+          }
+        },
+        {
+          "id": "95afd56e-d65c-4c78-a880-ce6924217f16",
+          "combo_item_id": "95afd530-5fd2-4b63-9218-c888e7c6c502",
+          "name": "Cola",
+          "name_localized": null,
+          "created_at": "2022-02-25 21:25:26",
+          "updated_at": "2022-02-25 21:25:26",
+          "deleted_at": null,
+          "pivot": {
+            "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+            "combo_option_id": "95afd56e-d65c-4c78-a880-ce6924217f16",
+            "price": 3,
+            "combo_size_id": "95afd487-a867-43bf-b538-3b232f4090b7",
+            "product_id": "95afcd8d-6ba8-4e0f-b878-d58e44bc8b2b"
+          }
+        }
+      ]
+    }
+  ]
+}
+</code></pre></div><h2 id="get-price-tag"><a href="#get-price-tag" class="header-anchor">#</a> Get Price Tag</h2> <p><code>GET /price_tags/{pricetags_Id}</code></p> <h4 id="scope"><a href="#scope" class="header-anchor">#</a> Scope</h4> <p><code>general.read</code></p> <h4 id="response-2"><a href="#response-2" class="header-anchor">#</a> Response</h4> <div class="language- extra-class"><pre class="language-text"><code>{
+  "data": {
+    "order_tag": {
+      "id": "965ddf6f-be02-4c39-b1aa-8e4e10d92d99",
+      "type": 4,
+      "name": "tag",
+      "name_localized": "tag",
+      "created_at": "2022-05-23 09:47:27",
+      "updated_at": "2022-05-23 09:47:27",
+      "deleted_at": null
+    },
+    "timed_events": [],
+    "branches": [
+      {
+        "id": "9598b48d-ffad-42da-bc43-46fe52b7d83a",
+        "name": "Branch 1",
+        "name_localized": "branch1",
+        "reference": "B01",
+        "type": 1,
+        "latitude": "30.033333",
+        "longitude": "31.233334",
+        "phone": null,
+        "opening_from": "01:00",
+        "opening_to": "22:00",
+        "inventory_end_of_day_time": "06:00",
+        "receipt_header": "Welcome",
+        "receipt_footer": "Thank you",
+        "settings": {
+          "branch_tax_number": "12345",
+          "branch_tax_registration_name": "tax-reg-name"
+        },
+        "created_at": "2022-02-14 09:29:27",
+        "updated_at": "2022-05-18 22:00:11",
+        "deleted_at": null,
+        "receives_online_orders": true,
+        "accepts_reservations": true,
+        "reservation_duration": 30,
+        "reservation_times": null,
+        "address": null
+      },
+      {
+        "id": "9598b48e-1646-446b-92b6-08dd59bc245e",
+        "name": "Branch 2",
+        "name_localized": null,
+        "reference": "B02",
+        "type": 1,
+        "latitude": null,
+        "longitude": null,
+        "phone": null,
+        "opening_from": "00:00",
+        "opening_to": "00:00",
+        "inventory_end_of_day_time": "00:00",
+        "receipt_header": null,
+        "receipt_footer": null,
+        "settings": null,
+        "created_at": "2022-02-14 09:29:27",
+        "updated_at": "2022-03-01 08:24:06",
+        "deleted_at": null,
+        "receives_online_orders": true,
+        "accepts_reservations": true,
+        "reservation_duration": 30,
+        "reservation_times": null,
+        "address": null
+      }
+    ],
+    "id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+    "name": "Online ordering pricing",
+    "name_localized": null,
+    "created_at": "2022-05-22 09:34:42",
+    "updated_at": "2022-06-30 07:06:15",
+    "deleted_at": null,
+    "modifier_options": [
+      {
+        "id": "95a52ec7-82b8-4300-b794-3059b79db30a",
+        "modifier_id": "959bcf39-13cc-4c36-85d6-e9277cdc18d6",
+        "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+        "name": "BBQ Sauce",
+        "name_localized": null,
+        "sku": "sk-0003",
+        "is_active": true,
+        "costing_method": 2,
+        "price": 2,
+        "cost": null,
+        "calories": null,
+        "created_at": "2022-02-20 14:21:09",
+        "updated_at": "2022-05-12 07:58:33",
+        "deleted_at": null,
+        "index": 0,
+        "pivot": {
+          "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+          "modifier_option_id": "95a52ec7-82b8-4300-b794-3059b79db30a",
+          "price": 0
+        }
+      }
+    ],
+    "products": [
+      {
+        "id": "95afc8fe-875f-402b-a051-9bbdae39bd73",
+        "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+        "category_id": "95ad35ad-2577-443b-a29a-04394d67909e",
+        "sku": "sk-0010",
+        "barcode": null,
+        "name": "Chicken Burger",
+        "name_localized": null,
+        "description": null,
+        "description_localized": null,
+        "image": null,
+        "is_active": true,
+        "is_stock_product": true,
+        "is_ready": true,
+        "pricing_method": 1,
+        "selling_method": 1,
+        "costing_method": 2,
+        "preparation_time": null,
+        "price": 38,
+        "cost": null,
+        "calories": null,
+        "created_at": "2022-02-25 20:50:39",
+        "updated_at": "2022-06-07 14:40:56",
+        "deleted_at": null,
+        "pivot": {
+          "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+          "product_id": "95afc8fe-875f-402b-a051-9bbdae39bd73",
+          "price": 30
+        }
+      }
+    ],
+    "combo_options": [
+      {
+        "id": "95afd4f4-be7c-4262-82f3-822eff400492",
+        "combo_item_id": "95afd492-fbc3-436f-b0a2-08b55bcdd518",
+        "name": "BBQ Burger",
+        "name_localized": null,
+        "created_at": "2022-02-25 21:24:06",
+        "updated_at": "2022-02-25 21:24:06",
+        "deleted_at": null,
+        "pivot": {
+          "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+          "combo_option_id": "95afd4f4-be7c-4262-82f3-822eff400492",
+          "price": 20,
+          "combo_size_id": "95afd47d-2c97-4b79-9f32-2af25b2b9908",
+          "product_id": "95ad35ce-b8e7-4c2e-810a-76fb61a1634e"
+        }
+      },
+      {
+        "id": "95afd56e-d65c-4c78-a880-ce6924217f16",
+        "combo_item_id": "95afd530-5fd2-4b63-9218-c888e7c6c502",
+        "name": "Cola",
+        "name_localized": null,
+        "created_at": "2022-02-25 21:25:26",
+        "updated_at": "2022-02-25 21:25:26",
+        "deleted_at": null,
+        "pivot": {
+          "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+          "combo_option_id": "95afd56e-d65c-4c78-a880-ce6924217f16",
+          "price": 3,
+          "combo_size_id": "95afd487-a867-43bf-b538-3b232f4090b7",
+          "product_id": "95afcd8d-6ba8-4e0f-b878-d58e44bc8b2b"
+        }
+      }
+    ]
+  }
+}
+</code></pre></div><h2 id="create-price-tag"><a href="#create-price-tag" class="header-anchor">#</a> Create Price Tag</h2> <p><code>POST /price_tags</code></p> <h4 id="scope-2"><a href="#scope-2" class="header-anchor">#</a> Scope</h4> <p><code>admin.write</code></p> <h4 id="request"><a href="#request" class="header-anchor">#</a> Request</h4> <div class="language- extra-class"><pre class="language-text"><code>{
+  "name": "Price Tag",
+  "name_localized": "price_tag",
+  "order_tag_id": "965ddf6f-be02-4c39-b1aa-8e4e10d92d99",
+  "branches": [
+    {
+      "id": "9598b48d-ffad-42da-bc43-46fe52b7d83a"
+    }
+  ]
+}
+</code></pre></div><h4 id="response-3"><a href="#response-3" class="header-anchor">#</a> Response</h4> <div class="language- extra-class"><pre class="language-text"><code>  {
+    "data": {
+        "order_tag": {
+            "id": "965ddf6f-be02-4c39-b1aa-8e4e10d92d99",
+            "type": 4,
+            "name": "tag",
+            "name_localized": "tag",
+            "created_at": "2022-05-23 09:47:27",
+            "updated_at": "2022-05-23 09:47:27",
+            "deleted_at": null
+        },
+        "timed_events": [],
+        "branches": [
+            {
+                "id": "9598b48d-ffad-42da-bc43-46fe52b7d83a",
+                "name": "Branch 1",
+                "name_localized": "branch1",
+                "reference": "B01",
+                "type": 1,
+                "latitude": "30.033333",
+                "longitude": "31.233334",
+                "phone": null,
+                "opening_from": "01:00",
+                "opening_to": "22:00",
+                "inventory_end_of_day_time": "06:00",
+                "receipt_header": "Welcome",
+                "receipt_footer": "Thank you",
+                "settings": {
+                    "branch_tax_number": "12345",
+                    "branch_tax_registration_name": "tax-reg-name"
+                },
+                "created_at": "2022-02-14 09:29:27",
+                "updated_at": "2022-05-18 22:00:11",
+                "deleted_at": null,
+                "receives_online_orders": true,
+                "accepts_reservations": true,
+                "reservation_duration": 30,
+                "reservation_times": null,
+                "address": null
+            }
+        ],
+        "id": "96aa197b-bf1d-422d-ac6d-94bd102a33e0",
+        "name": "Price Tag",
+        "name_localized": "price_tag",
+        "created_at": "2022-06-30 07:12:41",
+        "updated_at": "2022-06-30 07:12:41",
+        "deleted_at": null,
+        "modifier_options": [],
+        "combo_options": [],
+        "products": []
+    }
+}
+</code></pre></div><h2 id="update-price-tag"><a href="#update-price-tag" class="header-anchor">#</a> Update Price Tag</h2> <p><code>PUT /price_tags/{priceTags_Id}</code></p> <h4 id="scope-3"><a href="#scope-3" class="header-anchor">#</a> Scope</h4> <p><code>admin.write</code></p> <h4 id="request-2"><a href="#request-2" class="header-anchor">#</a> Request</h4> <div class="language- extra-class"><pre class="language-text"><code>{
+  "name": "Price tag updated name",
+  "name_localized": "price_tag",
+  "order_tag_id": "965ddf6f-be02-4c39-b1aa-8e4e10d92d99",
+  "branches": [
+    {
+      "id": "9598b48d-ffad-42da-bc43-46fe52b7d83a"
+    }
+  ]
+}
+</code></pre></div><h4 id="response-4"><a href="#response-4" class="header-anchor">#</a> Response</h4> <div class="language- extra-class"><pre class="language-text"><code>{
+  "data": {
+    "order_tag": {
+      "id": "965ddf6f-be02-4c39-b1aa-8e4e10d92d99",
+      "type": 4,
+      "name": "tag",
+      "name_localized": "tag",
+      "created_at": "2022-05-23 09:47:27",
+      "updated_at": "2022-05-23 09:47:27",
+      "deleted_at": null
+    },
+    "timed_events": [],
+    "branches": [
+      {
+        "id": "9598b48d-ffad-42da-bc43-46fe52b7d83a",
+        "name": "Branch 1",
+        "name_localized": "branch1",
+        "reference": "B01",
+        "type": 1,
+        "latitude": "30.033333",
+        "longitude": "31.233334",
+        "phone": null,
+        "opening_from": "01:00",
+        "opening_to": "22:00",
+        "inventory_end_of_day_time": "06:00",
+        "receipt_header": "Welcome",
+        "receipt_footer": "Thank you",
+        "settings": {
+          "branch_tax_number": "12345",
+          "branch_tax_registration_name": "tax-reg-name"
+        },
+        "created_at": "2022-02-14 09:29:27",
+        "updated_at": "2022-05-18 22:00:11",
+        "deleted_at": null,
+        "receives_online_orders": true,
+        "accepts_reservations": true,
+        "reservation_duration": 30,
+        "reservation_times": null,
+        "address": null
+      }
+    ],
+    "id": "96aa197b-bf1d-422d-ac6d-94bd102a33e0",
+    "name": "Price tag updated name",
+    "name_localized": "price_tag",
+    "created_at": "2022-06-30 07:12:41",
+    "updated_at": "2022-06-30 07:14:36",
+    "deleted_at": null,
+    "modifier_options": [],
+    "combo_options": [],
+    "products": []
+  }
+}
+</code></pre></div><h2 id="delete-price-tag"><a href="#delete-price-tag" class="header-anchor">#</a> Delete Price Tag</h2> <p><code>DELETE /price_tags/{priceTags_Id}</code></p> <h4 id="scope-4"><a href="#scope-4" class="header-anchor">#</a> Scope</h4> <p><code>admin.write</code></p> <h2 id="restore-price-tag"><a href="#restore-price-tag" class="header-anchor">#</a> Restore Price Tag</h2> <p><code>PUT /price_tags/{priceTags_Id}/restore</code></p> <h4 id="scope-5"><a href="#scope-5" class="header-anchor">#</a> Scope</h4> <p><code>admin.restore</code></p> <h2 id="get-price-tag-products"><a href="#get-price-tag-products" class="header-anchor">#</a> Get Price Tag Products</h2> <p><code>GET price_tags/{pricetag_id}/products</code></p> <h4 id="scope-6"><a href="#scope-6" class="header-anchor">#</a> Scope</h4> <p><code>general.read</code></p> <h4 id="response-5"><a href="#response-5" class="header-anchor">#</a> Response</h4> <div class="language- extra-class"><pre class="language-text"><code>{
+  "data": [
+    {
+      "pivot": {
+        "price": 30
+      },
+      "id": "95afc8fe-875f-402b-a051-9bbdae39bd73",
+      "sku": "sk-0010",
+      "barcode": null,
+      "name": "Chicken Burger",
+      "name_localized": null,
+      "description": null,
+      "description_localized": null,
+      "image": null,
+      "is_active": true,
+      "is_stock_product": true,
+      "is_ready": true,
+      "pricing_method": 1,
+      "selling_method": 1,
+      "costing_method": 2,
+      "preparation_time": null,
+      "price": 38,
+      "cost": null,
+      "calories": null,
+      "created_at": "2022-02-25 20:50:39",
+      "updated_at": "2022-06-07 14:40:56",
+      "deleted_at": null
+    }
+  ]
+}
+</code></pre></div><h2 id="add-price-tag-products"><a href="#add-price-tag-products" class="header-anchor">#</a> Add Price Tag Products</h2> <p><code>POST price_tags/{pricetag_id}/products/{product_id}</code></p> <h4 id="scope-7"><a href="#scope-7" class="header-anchor">#</a> Scope</h4> <p><code>admin.write</code></p> <h4 id="request-3"><a href="#request-3" class="header-anchor">#</a> Request</h4> <div class="language- extra-class"><pre class="language-text"><code>{
+    "price": 220.00
+}
+</code></pre></div><h4 id="response-6"><a href="#response-6" class="header-anchor">#</a> Response</h4> <div class="language- extra-class"><pre class="language-text"><code>{
+  "data": {
+    "order_tag": {
+      "id": "965ddf6f-be02-4c39-b1aa-8e4e10d92d99",
+      "type": 4,
+      "name": "tag",
+      "name_localized": "tag",
+      "created_at": "2022-05-23 09:47:27",
+      "updated_at": "2022-05-23 09:47:27",
+      "deleted_at": null
+    },
+    "timed_events": [],
+    "branches": [
+      {
+        "id": "9598b48d-ffad-42da-bc43-46fe52b7d83a",
+        "name": "Branch 1",
+        "name_localized": "branch1",
+        "reference": "B01",
+        "type": 1,
+        "latitude": "30.033333",
+        "longitude": "31.233334",
+        "phone": null,
+        "opening_from": "01:00",
+        "opening_to": "22:00",
+        "inventory_end_of_day_time": "06:00",
+        "receipt_header": "Welcome",
+        "receipt_footer": "Thank you",
+        "settings": {
+          "branch_tax_number": "12345",
+          "branch_tax_registration_name": "tax-reg-name"
+        },
+        "created_at": "2022-02-14 09:29:27",
+        "updated_at": "2022-05-18 22:00:11",
+        "deleted_at": null,
+        "receives_online_orders": true,
+        "accepts_reservations": true,
+        "reservation_duration": 30,
+        "reservation_times": null,
+        "address": null
+      },
+      {
+        "id": "9598b48e-1646-446b-92b6-08dd59bc245e",
+        "name": "Branch 2",
+        "name_localized": null,
+        "reference": "B02",
+        "type": 1,
+        "latitude": null,
+        "longitude": null,
+        "phone": null,
+        "opening_from": "00:00",
+        "opening_to": "00:00",
+        "inventory_end_of_day_time": "00:00",
+        "receipt_header": null,
+        "receipt_footer": null,
+        "settings": null,
+        "created_at": "2022-02-14 09:29:27",
+        "updated_at": "2022-03-01 08:24:06",
+        "deleted_at": null,
+        "receives_online_orders": true,
+        "accepts_reservations": true,
+        "reservation_duration": 30,
+        "reservation_times": null,
+        "address": null
+      }
+    ],
+    "id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+    "name": "Online ordering pricing",
+    "name_localized": null,
+    "created_at": "2022-05-22 09:34:42",
+    "updated_at": "2022-06-30 07:41:27",
+    "deleted_at": null,
+    "modifier_options": [
+      {
+        "id": "95a52ec7-82b8-4300-b794-3059b79db30a",
+        "modifier_id": "959bcf39-13cc-4c36-85d6-e9277cdc18d6",
+        "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+        "name": "BBQ Sauce",
+        "name_localized": null,
+        "sku": "sk-0003",
+        "is_active": true,
+        "costing_method": 2,
+        "price": 2,
+        "cost": null,
+        "calories": null,
+        "created_at": "2022-02-20 14:21:09",
+        "updated_at": "2022-05-12 07:58:33",
+        "deleted_at": null,
+        "index": 0,
+        "pivot": {
+          "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+          "modifier_option_id": "95a52ec7-82b8-4300-b794-3059b79db30a",
+          "price": 0
+        }
+      }
+    ],
+    "combo_options": [
+      {
+        "id": "95afd4f4-be7c-4262-82f3-822eff400492",
+        "combo_item_id": "95afd492-fbc3-436f-b0a2-08b55bcdd518",
+        "name": "BBQ Burger",
+        "name_localized": null,
+        "created_at": "2022-02-25 21:24:06",
+        "updated_at": "2022-02-25 21:24:06",
+        "deleted_at": null,
+        "pivot": {
+          "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+          "combo_option_id": "95afd4f4-be7c-4262-82f3-822eff400492",
+          "price": 20,
+          "combo_size_id": "95afd47d-2c97-4b79-9f32-2af25b2b9908",
+          "product_id": "95ad35ce-b8e7-4c2e-810a-76fb61a1634e"
+        }
+      },
+      {
+        "id": "95afd56e-d65c-4c78-a880-ce6924217f16",
+        "combo_item_id": "95afd530-5fd2-4b63-9218-c888e7c6c502",
+        "name": "Cola",
+        "name_localized": null,
+        "created_at": "2022-02-25 21:25:26",
+        "updated_at": "2022-02-25 21:25:26",
+        "deleted_at": null,
+        "pivot": {
+          "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+          "combo_option_id": "95afd56e-d65c-4c78-a880-ce6924217f16",
+          "price": 3,
+          "combo_size_id": "95afd487-a867-43bf-b538-3b232f4090b7",
+          "product_id": "95afcd8d-6ba8-4e0f-b878-d58e44bc8b2b"
+        }
+      }
+    ],
+    "products": [
+      {
+        "id": "95ad35ce-b8e7-4c2e-810a-76fb61a1634e",
+        "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+        "category_id": "95ad35ad-2577-443b-a29a-04394d67909e",
+        "sku": "sk-0006",
+        "barcode": null,
+        "name": "BBQ Burger",
+        "name_localized": null,
+        "description": null,
+        "description_localized": null,
+        "image": null,
+        "is_active": true,
+        "is_stock_product": true,
+        "is_ready": true,
+        "pricing_method": 1,
+        "selling_method": 1,
+        "costing_method": 2,
+        "preparation_time": null,
+        "price": 50,
+        "cost": null,
+        "calories": null,
+        "created_at": "2022-02-24 14:07:26",
+        "updated_at": "2022-03-20 21:52:28",
+        "deleted_at": null,
+        "pivot": {
+          "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+          "product_id": "95ad35ce-b8e7-4c2e-810a-76fb61a1634e",
+          "price": 220
+        }
+      },
+      {
+        "id": "95afc8fe-875f-402b-a051-9bbdae39bd73",
+        "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+        "category_id": "95ad35ad-2577-443b-a29a-04394d67909e",
+        "sku": "sk-0010",
+        "barcode": null,
+        "name": "Chicken Burger",
+        "name_localized": null,
+        "description": null,
+        "description_localized": null,
+        "image": null,
+        "is_active": true,
+        "is_stock_product": true,
+        "is_ready": true,
+        "pricing_method": 1,
+        "selling_method": 1,
+        "costing_method": 2,
+        "preparation_time": null,
+        "price": 38,
+        "cost": null,
+        "calories": null,
+        "created_at": "2022-02-25 20:50:39",
+        "updated_at": "2022-06-07 14:40:56",
+        "deleted_at": null,
+        "pivot": {
+          "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+          "product_id": "95afc8fe-875f-402b-a051-9bbdae39bd73",
+          "price": 30
+        }
+      }
+    ]
+  }
+}
+</code></pre></div><h2 id="delete-price-tag-from-products"><a href="#delete-price-tag-from-products" class="header-anchor">#</a> Delete Price Tag from Products</h2> <p><code>DELETE price_tags/{pricetag_id}/products/{product_id}</code></p> <h4 id="scope-8"><a href="#scope-8" class="header-anchor">#</a> Scope</h4> <p><code>admin.write</code></p> <h2 id="get-price-tag-combo-options"><a href="#get-price-tag-combo-options" class="header-anchor">#</a> Get Price Tag Combo options</h2> <p><code>GET price_tags/{pricetag_id}/combo_options</code></p> <h4 id="scope-9"><a href="#scope-9" class="header-anchor">#</a> Scope</h4> <p><code>general.read</code></p> <h4 id="response-7"><a href="#response-7" class="header-anchor">#</a> Response</h4> <div class="language- extra-class"><pre class="language-text"><code>{
+  "data": [
+    {
+      "pivot": {
+        "price": 20,
+        "product": {
+          "id": "95ad35ce-b8e7-4c2e-810a-76fb61a1634e",
+          "sku": "sk-0006",
+          "barcode": null,
+          "name": "BBQ Burger",
+          "name_localized": null,
+          "description": null,
+          "description_localized": null,
+          "image": null,
+          "is_active": true,
+          "is_stock_product": true,
+          "is_ready": true,
+          "pricing_method": 1,
+          "selling_method": 1,
+          "costing_method": 2,
+          "preparation_time": null,
+          "price": 50,
+          "cost": null,
+          "calories": null,
+          "created_at": "2022-02-24 14:07:26",
+          "updated_at": "2022-03-20 21:52:28",
+          "deleted_at": null
+        },
+        "size": {
+          "id": "95afd47d-2c97-4b79-9f32-2af25b2b9908",
+          "name": "Small",
+          "name_localized": null,
+          "created_at": "2022-02-25 21:22:47",
+          "updated_at": "2022-02-25 21:22:47",
+          "deleted_at": null
+        }
+      },
+      "id": "95afd4f4-be7c-4262-82f3-822eff400492",
+      "name": "BBQ Burger",
+      "name_localized": null,
+      "created_at": "2022-02-25 21:24:06",
+      "updated_at": "2022-02-25 21:24:06",
+      "deleted_at": null
+    },
+    {
+      "pivot": {
+        "price": 3,
+        "product": {
+          "id": "95afcd8d-6ba8-4e0f-b878-d58e44bc8b2b",
+          "sku": "sk-0013",
+          "barcode": null,
+          "name": "Cola",
+          "name_localized": null,
+          "description": null,
+          "description_localized": null,
+          "image": null,
+          "is_active": true,
+          "is_stock_product": true,
+          "is_ready": true,
+          "pricing_method": 1,
+          "selling_method": 1,
+          "costing_method": 2,
+          "preparation_time": null,
+          "price": 5,
+          "cost": null,
+          "calories": null,
+          "created_at": "2022-02-25 21:03:24",
+          "updated_at": "2022-02-25 21:03:24",
+          "deleted_at": null
+        },
+        "size": {
+          "id": "95afd487-a867-43bf-b538-3b232f4090b7",
+          "name": "Large",
+          "name_localized": null,
+          "created_at": "2022-02-25 21:22:54",
+          "updated_at": "2022-02-25 21:22:54",
+          "deleted_at": null
+        }
+      },
+      "id": "95afd56e-d65c-4c78-a880-ce6924217f16",
+      "name": "Cola",
+      "name_localized": null,
+      "created_at": "2022-02-25 21:25:26",
+      "updated_at": "2022-02-25 21:25:26",
+      "deleted_at": null
+    }
+  ]
+}
+</code></pre></div><h2 id="add-price-tag-combo-options"><a href="#add-price-tag-combo-options" class="header-anchor">#</a> Add Price Tag Combo options</h2> <p><code>POST /price_tags/{pricetag_id}/combo_options/{combo_options_id}/sizes/{sizes_id}/products/{product_id}</code></p> <h4 id="scope-10"><a href="#scope-10" class="header-anchor">#</a> Scope</h4> <p><code>admin.write</code></p> <h4 id="request-4"><a href="#request-4" class="header-anchor">#</a> Request</h4> <div class="language- extra-class"><pre class="language-text"><code>{
+    "price": 220.00
+}
+</code></pre></div><h4 id="response-8"><a href="#response-8" class="header-anchor">#</a> Response</h4> <div class="language- extra-class"><pre class="language-text"><code>{
+    "data": {
+        "order_tag": {
+            "id": "965ddf6f-be02-4c39-b1aa-8e4e10d92d99",
+            "type": 4,
+            "name": "tag",
+            "name_localized": "tag",
+            "created_at": "2022-05-23 09:47:27",
+            "updated_at": "2022-05-23 09:47:27",
+            "deleted_at": null
+        },
+        "timed_events": [],
+        "branches": [
+            {
+                "id": "9598b48d-ffad-42da-bc43-46fe52b7d83a",
+                "name": "Branch 1",
+                "name_localized": "branch1",
+                "reference": "B01",
+                "type": 1,
+                "latitude": "30.033333",
+                "longitude": "31.233334",
+                "phone": null,
+                "opening_from": "01:00",
+                "opening_to": "22:00",
+                "inventory_end_of_day_time": "06:00",
+                "receipt_header": "Welcome",
+                "receipt_footer": "Thank you",
+                "settings": {
+                    "branch_tax_number": "12345",
+                    "branch_tax_registration_name": "tax-reg-name"
+                },
+                "created_at": "2022-02-14 09:29:27",
+                "updated_at": "2022-05-18 22:00:11",
+                "deleted_at": null,
+                "receives_online_orders": true,
+                "accepts_reservations": true,
+                "reservation_duration": 30,
+                "reservation_times": null,
+                "address": null
+            },
+            {
+                "id": "9598b48e-1646-446b-92b6-08dd59bc245e",
+                "name": "Branch 2",
+                "name_localized": null,
+                "reference": "B02",
+                "type": 1,
+                "latitude": null,
+                "longitude": null,
+                "phone": null,
+                "opening_from": "00:00",
+                "opening_to": "00:00",
+                "inventory_end_of_day_time": "00:00",
+                "receipt_header": null,
+                "receipt_footer": null,
+                "settings": null,
+                "created_at": "2022-02-14 09:29:27",
+                "updated_at": "2022-03-01 08:24:06",
+                "deleted_at": null,
+                "receives_online_orders": true,
+                "accepts_reservations": true,
+                "reservation_duration": 30,
+                "reservation_times": null,
+                "address": null
+            }
+        ],
+        "id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+        "name": "Online ordering pricing",
+        "name_localized": null,
+        "created_at": "2022-05-22 09:34:42",
+        "updated_at": "2022-06-30 07:48:38",
+        "deleted_at": null,
+        "modifier_options": [
+            {
+                "id": "95a52ec7-82b8-4300-b794-3059b79db30a",
+                "modifier_id": "959bcf39-13cc-4c36-85d6-e9277cdc18d6",
+                "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+                "name": "BBQ Sauce",
+                "name_localized": null,
+                "sku": "sk-0003",
+                "is_active": true,
+                "costing_method": 2,
+                "price": 2,
+                "cost": null,
+                "calories": null,
+                "created_at": "2022-02-20 14:21:09",
+                "updated_at": "2022-05-12 07:58:33",
+                "deleted_at": null,
+                "index": 0,
+                "pivot": {
+                    "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+                    "modifier_option_id": "95a52ec7-82b8-4300-b794-3059b79db30a",
+                    "price": 0
+                }
+            }
+        ],
+        "combo_options": [
+            {
+                "id": "95afd4f4-be7c-4262-82f3-822eff400492",
+                "combo_item_id": "95afd492-fbc3-436f-b0a2-08b55bcdd518",
+                "name": "BBQ Burger",
+                "name_localized": null,
+                "created_at": "2022-02-25 21:24:06",
+                "updated_at": "2022-02-25 21:24:06",
+                "deleted_at": null,
+                "pivot": {
+                    "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+                    "combo_option_id": "95afd4f4-be7c-4262-82f3-822eff400492",
+                    "price": 220,
+                    "combo_size_id": "95afd47d-2c97-4b79-9f32-2af25b2b9908",
+                    "product_id": "95ad35ce-b8e7-4c2e-810a-76fb61a1634e"
+                }
+            },
+            {
+                "id": "95afd56e-d65c-4c78-a880-ce6924217f16",
+                "combo_item_id": "95afd530-5fd2-4b63-9218-c888e7c6c502",
+                "name": "Cola",
+                "name_localized": null,
+                "created_at": "2022-02-25 21:25:26",
+                "updated_at": "2022-02-25 21:25:26",
+                "deleted_at": null,
+                "pivot": {
+                    "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+                    "combo_option_id": "95afd56e-d65c-4c78-a880-ce6924217f16",
+                    "price": 3,
+                    "combo_size_id": "95afd487-a867-43bf-b538-3b232f4090b7",
+                    "product_id": "95afcd8d-6ba8-4e0f-b878-d58e44bc8b2b"
+                }
+            }
+        ],
+        "products": [
+            {
+                "id": "95ad35ce-b8e7-4c2e-810a-76fb61a1634e",
+                "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+                "category_id": "95ad35ad-2577-443b-a29a-04394d67909e",
+                "sku": "sk-0006",
+                "barcode": null,
+                "name": "BBQ Burger",
+                "name_localized": null,
+                "description": null,
+                "description_localized": null,
+                "image": null,
+                "is_active": true,
+                "is_stock_product": true,
+                "is_ready": true,
+                "pricing_method": 1,
+                "selling_method": 1,
+                "costing_method": 2,
+                "preparation_time": null,
+                "price": 50,
+                "cost": null,
+                "calories": null,
+                "created_at": "2022-02-24 14:07:26",
+                "updated_at": "2022-03-20 21:52:28",
+                "deleted_at": null,
+                "pivot": {
+                    "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+                    "product_id": "95ad35ce-b8e7-4c2e-810a-76fb61a1634e",
+                    "price": 220
+                }
+            },
+            {
+                "id": "95afc8fe-875f-402b-a051-9bbdae39bd73",
+                "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+                "category_id": "95ad35ad-2577-443b-a29a-04394d67909e",
+                "sku": "sk-0010",
+                "barcode": null,
+                "name": "Chicken Burger",
+                "name_localized": null,
+                "description": null,
+                "description_localized": null,
+                "image": null,
+                "is_active": true,
+                "is_stock_product": true,
+                "is_ready": true,
+                "pricing_method": 1,
+                "selling_method": 1,
+                "costing_method": 2,
+                "preparation_time": null,
+                "price": 38,
+                "cost": null,
+                "calories": null,
+                "created_at": "2022-02-25 20:50:39",
+                "updated_at": "2022-06-07 14:40:56",
+                "deleted_at": null,
+                "pivot": {
+                    "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+                    "product_id": "95afc8fe-875f-402b-a051-9bbdae39bd73",
+                    "price": 30
+                }
+            }
+        ]
+    }
+}
+</code></pre></div><h2 id="delete-price-tag-from-combo-options"><a href="#delete-price-tag-from-combo-options" class="header-anchor">#</a> Delete Price Tag from Combo Options</h2> <p><code>DELETE /price_tags/{pricetag_id}/combo_options/{combo_options_id}/sizes/{sizes_id}/products/{product_id}</code></p> <h4 id="scope-11"><a href="#scope-11" class="header-anchor">#</a> Scope</h4> <p><code>admin.write</code></p> <h2 id="get-price-tag-modifier-options"><a href="#get-price-tag-modifier-options" class="header-anchor">#</a> Get Price Tag Modifier Options</h2> <p><code>GET price_tags/{pricetag_id}/modifier_options</code></p> <h4 id="scope-12"><a href="#scope-12" class="header-anchor">#</a> Scope</h4> <p><code>general.read</code></p> <h4 id="response-9"><a href="#response-9" class="header-anchor">#</a> Response</h4> <div class="language- extra-class"><pre class="language-text"><code>{
+  "data": [
+    {
+      "pivot": {
+        "price": 0
+      },
+      "id": "95a52ec7-82b8-4300-b794-3059b79db30a",
+      "name": "BBQ Sauce",
+      "name_localized": null,
+      "sku": "sk-0003",
+      "is_active": true,
+      "costing_method": 2,
+      "price": 2,
+      "cost": null,
+      "calories": null,
+      "created_at": "2022-02-20 14:21:09",
+      "updated_at": "2022-05-12 07:58:33",
+      "deleted_at": null,
+      "index": 0
+    }
+  ]
+}
+</code></pre></div><h2 id="add-price-tag-modifier-options"><a href="#add-price-tag-modifier-options" class="header-anchor">#</a> Add Price Tag Modifier Options</h2> <p><code>POST /price_tags/{prics_tags_id}/modifier_options/{modifier_options_id}</code></p> <h4 id="scope-13"><a href="#scope-13" class="header-anchor">#</a> Scope</h4> <p><code>admin.write</code></p> <h4 id="request-5"><a href="#request-5" class="header-anchor">#</a> Request</h4> <div class="language- extra-class"><pre class="language-text"><code>{
+    "price": 5
+}
+</code></pre></div><h4 id="response-10"><a href="#response-10" class="header-anchor">#</a> Response</h4> <div class="language- extra-class"><pre class="language-text"><code>{
+    "data": {
+        "order_tag": {
+            "id": "965ddf6f-be02-4c39-b1aa-8e4e10d92d99",
+            "type": 4,
+            "name": "tag",
+            "name_localized": "tag",
+            "created_at": "2022-05-23 09:47:27",
+            "updated_at": "2022-05-23 09:47:27",
+            "deleted_at": null
+        },
+        "timed_events": [],
+        "branches": [
+            {
+                "id": "9598b48d-ffad-42da-bc43-46fe52b7d83a",
+                "name": "Branch 1",
+                "name_localized": "branch1",
+                "reference": "B01",
+                "type": 1,
+                "latitude": "30.033333",
+                "longitude": "31.233334",
+                "phone": null,
+                "opening_from": "01:00",
+                "opening_to": "22:00",
+                "inventory_end_of_day_time": "06:00",
+                "receipt_header": "Welcome",
+                "receipt_footer": "Thank you",
+                "settings": {
+                    "branch_tax_number": "12345",
+                    "branch_tax_registration_name": "tax-reg-name"
+                },
+                "created_at": "2022-02-14 09:29:27",
+                "updated_at": "2022-05-18 22:00:11",
+                "deleted_at": null,
+                "receives_online_orders": true,
+                "accepts_reservations": true,
+                "reservation_duration": 30,
+                "reservation_times": null,
+                "address": null
+            },
+            {
+                "id": "9598b48e-1646-446b-92b6-08dd59bc245e",
+                "name": "Branch 2",
+                "name_localized": null,
+                "reference": "B02",
+                "type": 1,
+                "latitude": null,
+                "longitude": null,
+                "phone": null,
+                "opening_from": "00:00",
+                "opening_to": "00:00",
+                "inventory_end_of_day_time": "00:00",
+                "receipt_header": null,
+                "receipt_footer": null,
+                "settings": null,
+                "created_at": "2022-02-14 09:29:27",
+                "updated_at": "2022-03-01 08:24:06",
+                "deleted_at": null,
+                "receives_online_orders": true,
+                "accepts_reservations": true,
+                "reservation_duration": 30,
+                "reservation_times": null,
+                "address": null
+            }
+        ],
+        "id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+        "name": "Online ordering pricing",
+        "name_localized": null,
+        "created_at": "2022-05-22 09:34:42",
+        "updated_at": "2022-06-30 07:52:41",
+        "deleted_at": null,
+        "modifier_options": [
+            {
+                "id": "95a52ec7-82b8-4300-b794-3059b79db30a",
+                "modifier_id": "959bcf39-13cc-4c36-85d6-e9277cdc18d6",
+                "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+                "name": "BBQ Sauce",
+                "name_localized": null,
+                "sku": "sk-0003",
+                "is_active": true,
+                "costing_method": 2,
+                "price": 2,
+                "cost": null,
+                "calories": null,
+                "created_at": "2022-02-20 14:21:09",
+                "updated_at": "2022-05-12 07:58:33",
+                "deleted_at": null,
+                "index": 0,
+                "pivot": {
+                    "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+                    "modifier_option_id": "95a52ec7-82b8-4300-b794-3059b79db30a",
+                    "price": 0
+                }
+            },
+            {
+                "id": "95afc868-e245-48ee-87e6-5791a26489df",
+                "modifier_id": "959bcf39-13cc-4c36-85d6-e9277cdc18d6",
+                "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+                "name": "Ranch Sauce",
+                "name_localized": null,
+                "sku": "sk-0009",
+                "is_active": true,
+                "costing_method": 2,
+                "price": 3,
+                "cost": null,
+                "calories": null,
+                "created_at": "2022-02-25 20:49:01",
+                "updated_at": "2022-03-13 22:22:04",
+                "deleted_at": null,
+                "index": 0,
+                "pivot": {
+                    "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+                    "modifier_option_id": "95afc868-e245-48ee-87e6-5791a26489df",
+                    "price": 5
+                }
+            }
+        ],
+        "combo_options": [
+            {
+                "id": "95afd4f4-be7c-4262-82f3-822eff400492",
+                "combo_item_id": "95afd492-fbc3-436f-b0a2-08b55bcdd518",
+                "name": "BBQ Burger",
+                "name_localized": null,
+                "created_at": "2022-02-25 21:24:06",
+                "updated_at": "2022-02-25 21:24:06",
+                "deleted_at": null,
+                "pivot": {
+                    "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+                    "combo_option_id": "95afd4f4-be7c-4262-82f3-822eff400492",
+                    "price": 220,
+                    "combo_size_id": "95afd47d-2c97-4b79-9f32-2af25b2b9908",
+                    "product_id": "95ad35ce-b8e7-4c2e-810a-76fb61a1634e"
+                }
+            },
+            {
+                "id": "95afd56e-d65c-4c78-a880-ce6924217f16",
+                "combo_item_id": "95afd530-5fd2-4b63-9218-c888e7c6c502",
+                "name": "Cola",
+                "name_localized": null,
+                "created_at": "2022-02-25 21:25:26",
+                "updated_at": "2022-02-25 21:25:26",
+                "deleted_at": null,
+                "pivot": {
+                    "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+                    "combo_option_id": "95afd56e-d65c-4c78-a880-ce6924217f16",
+                    "price": 3,
+                    "combo_size_id": "95afd487-a867-43bf-b538-3b232f4090b7",
+                    "product_id": "95afcd8d-6ba8-4e0f-b878-d58e44bc8b2b"
+                }
+            }
+        ],
+        "products": [
+            {
+                "id": "95ad35ce-b8e7-4c2e-810a-76fb61a1634e",
+                "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+                "category_id": "95ad35ad-2577-443b-a29a-04394d67909e",
+                "sku": "sk-0006",
+                "barcode": null,
+                "name": "BBQ Burger",
+                "name_localized": null,
+                "description": null,
+                "description_localized": null,
+                "image": null,
+                "is_active": true,
+                "is_stock_product": true,
+                "is_ready": true,
+                "pricing_method": 1,
+                "selling_method": 1,
+                "costing_method": 2,
+                "preparation_time": null,
+                "price": 50,
+                "cost": null,
+                "calories": null,
+                "created_at": "2022-02-24 14:07:26",
+                "updated_at": "2022-03-20 21:52:28",
+                "deleted_at": null,
+                "pivot": {
+                    "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+                    "product_id": "95ad35ce-b8e7-4c2e-810a-76fb61a1634e",
+                    "price": 220
+                }
+            },
+            {
+                "id": "95afc8fe-875f-402b-a051-9bbdae39bd73",
+                "tax_group_id": "95a532df-24d7-4bdf-814b-bc78a99b1817",
+                "category_id": "95ad35ad-2577-443b-a29a-04394d67909e",
+                "sku": "sk-0010",
+                "barcode": null,
+                "name": "Chicken Burger",
+                "name_localized": null,
+                "description": null,
+                "description_localized": null,
+                "image": null,
+                "is_active": true,
+                "is_stock_product": true,
+                "is_ready": true,
+                "pricing_method": 1,
+                "selling_method": 1,
+                "costing_method": 2,
+                "preparation_time": null,
+                "price": 38,
+                "cost": null,
+                "calories": null,
+                "created_at": "2022-02-25 20:50:39",
+                "updated_at": "2022-06-07 14:40:56",
+                "deleted_at": null,
+                "pivot": {
+                    "price_tag_id": "965bd7e4-499b-4c06-959e-4a851bdd5a23",
+                    "product_id": "95afc8fe-875f-402b-a051-9bbdae39bd73",
+                    "price": 30
+                }
+            }
+        ]
+    }
+}
+</code></pre></div><h2 id="delete-price-tag-from-modifier-options"><a href="#delete-price-tag-from-modifier-options" class="header-anchor">#</a> Delete Price Tag from Modifier Options</h2> <p><code>DELETE /price_tags/{pricetag_id}/modifier_options/{modifier_options_id}</code></p> <h4 id="scope-14"><a href="#scope-14" class="header-anchor">#</a> Scope</h4> <p><code>admin.write</code></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">20/9/2022, 3:03:47 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a class="prev" href="Payment Methods.html">Payment Methods</a></span> <span class="next"><a href="Products.html">Products</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="js/app.8b48e3b5.js" defer=""></script><script src="js/3.c58bb6c9.js" defer=""></script><script src="js/54.f13fc188.js" defer=""></script>
+  
+
+</body></html>
